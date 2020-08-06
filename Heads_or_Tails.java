@@ -1,5 +1,5 @@
 import java.util.Random;
-
+import java.util.Scanner;
 public class Heads_or_Tails{
   public static void main(String[] args){
     int ROUND = 3;
@@ -7,11 +7,11 @@ public class Heads_or_Tails{
     int NumberOfTails = 0;
 
     Random random = new Random();
+    Scanner scanner = new Scanner(System.in);
 
-
-    
-
-    
+    System.out.println("Please name: ");
+    String name = scanner.nextLine();
+    System.out.print("Hi, " + name);
 
     System.out.println("Tossing a coin");
 
@@ -27,6 +27,6 @@ public class Heads_or_Tails{
     }
     System.out.println("Heads: " + NumberOfHeads + ", Tails: " + NumberOfTails);
 
-    i
+    
   }
 }
