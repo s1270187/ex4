@@ -7,12 +7,9 @@ public class Heads_or_Tails{
     int NumberOfTails = 0;
 
     Random random = new Random();
-
-
     
 
     
-
     System.out.println("Tossing a coin");
 
     for (int i = 1;i<=ROUND;i++){
@@ -27,6 +24,11 @@ public class Heads_or_Tails{
     }
     System.out.println("Heads: " + NumberOfHeads + ", Tails: " + NumberOfTails);
 
-    i
+    if (NumberOfHeads > NumberOfTails){
+      System.out.print("You won");
+    }
+    else{
+      System.out.print("You lost");
+    }
   }
 }
